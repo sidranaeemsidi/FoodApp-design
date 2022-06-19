@@ -1,0 +1,264 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flexbox;
+    flex-direction: column;
+}
+:root{
+    --navbar-height: 59px;
+}
+/*css variables*/
+#navbar::before{
+    content: "";
+    background-color: rgb(71, 57, 57);
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+
+}
+#logo{
+    margin: 20px 30px;
+}
+#logo img{
+    height: 50px;
+    margin: 10px 10px; 
+    width: 65px;
+}
+#navbar ul{
+    display: flex;
+font-family: 'Tenali Ramakrishna', sans-serif;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 2rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 80px;
+    /*border: 2px solid green;*/
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 400px;
+    padding: 3px 200px;
+}
+#home::before{
+    content: "";
+    background-image: url(../website2/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*services classes*/
+.service-container{
+    text-align: center;
+    display: flexbox;
+
+}
+.service-container h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#services{
+    margin: 5px;
+    display: flex;
+
+
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 3px 6px;
+    padding: 32px;
+    text-align: center;
+    border-radius: 23px;
+    background-color: rgb(240, 230, 230);
+    
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+
+}
+#services box p{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    justify-content: center;
+}
+/*Our clients*/
+#client-section::before{
+    content: "";
+    position: relative;
+    background-color: azure;
+    background: url(../website2/images/img12.webp);
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#client-section{
+    height: 400px;
+
+
+}
+#client-section h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bree Serif', serif;
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    
+
+}
+.client-item{
+    padding: 34px;
+    margin: 5px;
+    border: 3px solid gold;
+    border-radius: 100px;
+    background-color: rgb(238, 235, 236);
+
+}
+.client-item img{
+    height: 124px;
+}
+/*utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-primary-center{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(194, 156, 107);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#contact{
+position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url(../website2/images/img12.webp);
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 34px;
+    width: 100%;
+}
+#contact-box form{
+    width: 40%;
+    border: 2px solid blueviolet;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: rgb(194, 223, 223);
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.form-group{
+
+}
+footer{
+    text-align: center;
+    color: white;
+    padding: 9px 2px;
+    background-color: black;
+}
+
+
+
